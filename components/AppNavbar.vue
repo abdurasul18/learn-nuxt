@@ -4,6 +4,9 @@
       <li class="mx-4 text-xl text-blue-700">
         <nuxt-link to="/"> Home </nuxt-link>
       </li>
+       <li class="mx-4 text-xl text-blue-700">
+        <nuxt-link to="/food"> Food </nuxt-link>
+      </li>
       <li class="mx-4 text-xl text-blue-700">
         <nuxt-link to="/contact"> Contact </nuxt-link>
       </li>
