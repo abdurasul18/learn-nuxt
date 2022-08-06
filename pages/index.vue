@@ -1,21 +1,18 @@
 <template>
-  <div>
-    {{ $store.state.movies.counter }}
-    <div>
-      <button
-        @click="$store.commit('movies/increment')"
-        class="
-          p-5
-          bg-blue-700
-          flex
-          justify-center
-          items-center
-          rounded
-          text-white
-        "
-      >
-        Counter++
-      </button>
+  <div class="grid grid-cols-1  lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+    <div class="col-span-1" v-for="i in 12" :key="i">
+      <img
+        class="w-full h-40 object-cover"
+        :src="`https://picsum.photos/400/5${i}`"
+        alt=""
+      />
+    </div>
+    <div class="col-span-full xl:col-span-1">
+      <img
+        class="w-full h-40 object-cover"
+        :src="`https://picsum.photos/400/500`"
+        alt=""
+      />
     </div>
   </div>
 </template>
